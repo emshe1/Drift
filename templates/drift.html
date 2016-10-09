@@ -1,4 +1,22 @@
 <ion-view title="Drift" id="page1" style="background-color:#3B6E74;">
+    <ion-header-bar class="bar-positive">
+            <h1 class="title">Using Angular with Ionic</h1>
+            <script type="text/javascript">
+
+                window.onload=timeout;
+                function timeout()
+                {
+                    window.setTimeout("redirect()",5000)
+                }
+
+                function redirect()
+                {
+                    window.location="login.html"
+                    return
+                }
+
+            </script>
+    </ion-header-bar>
     <ion-content padding="true" class="has-header">
         <div class="spacer" style="width: 300px; height: 69px;"></div>
         <h1 id="drift-heading1" style="color:#FFFFFF;text-align:center;">Drift</h1>
