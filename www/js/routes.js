@@ -10,7 +10,7 @@ angular.module('app.routes', [])
     
   
 
-      .state('drift', {
+        .state('drift', {
     url: '/home',
     templateUrl: 'templates/drift.html',
     controller: 'driftCtrl'
@@ -19,13 +19,15 @@ angular.module('app.routes', [])
   .state('login', {
     url: '/login',
     templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
+    controller: 'loginCtrl',
+    data: { login: true }
   })
 
   .state('signup', {
     url: '/signup',
     templateUrl: 'templates/signup.html',
-    controller: 'signupCtrl'
+    controller: 'signupCtrl',
+    data: { public: true }
   })
 
   .state('search_address', {
