@@ -48,7 +48,7 @@ angular.module('app.routes', [])
     controller: 'billingInfoCtrl'
   })
 
-$urlRouterProvider.otherwise('/home')
+$urlRouterProvider.otherwise('/drift')
 
   
 
